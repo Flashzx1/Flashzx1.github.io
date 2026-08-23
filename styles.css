@@ -163,7 +163,15 @@ a { color: inherit; }
   object-position: top center;
   transition: transform .6s ease;
 }
+.project-featured .project-media {
+  background: linear-gradient(110deg, #173a2b, #39432f);
+}
+.project-featured .project-media img {
+  object-fit: contain;
+  object-position: center;
+}
 .project:hover .project-media img { transform: scale(1.025); }
+.project-featured:hover .project-media img { transform: none; }
 .project-copy { display: flex; padding: clamp(28px, 4vw, 54px); flex-direction: column; justify-content: flex-end; }
 .project-number { margin-bottom: auto; color: var(--muted); font-size: .75rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
 .project h3 { margin: 32px 0 16px; font-size: clamp(2.3rem, 4vw, 4.4rem); line-height: .95; letter-spacing: -.055em; }
